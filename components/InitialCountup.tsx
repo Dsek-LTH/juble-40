@@ -31,10 +31,10 @@ const InitialCountup = () => {
       </div>
 
       <span
-        className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl transition-all duration-1000"
+        className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 animate-fade text-8xl transition-all duration-1000"
         style={{ top: isDone ? "80%" : "50%", opacity: isDone ? 0 : 1 }}
       >
-        <div className="w-48 overflow-hidden">
+        <div className="w-48">
           <AnimatedNumber onDone={() => setIsDone(true)} />
         </div>
       </span>
