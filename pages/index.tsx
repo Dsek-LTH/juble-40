@@ -1,8 +1,9 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import Layout from '../components/Layout'
+import Link from "next/link";
+import Image from "next/image";
+import Layout from "../components/Layout";
+import Schedule from "../components/Schedule";
 
-import Logo from "../public/assets/images/juble40_color.svg"
+import Logo from "../public/assets/images/juble40_color.svg";
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
@@ -11,21 +12,24 @@ const IndexPage = () => (
         <div className="flex flex-col">
           <Image src={Logo} height={250} />
 
-          <div className="pt-8 space-y-2">
-            <h1 className="text-3xl font-semibold text-center">Jubileum blah blah blah</h1>
-            <h3 className="text-lg text-center">1 Juni till 7 Juni</h3>
+          <div className="space-y-2 pt-8">
+            <h1 className="text-center text-3xl font-semibold">
+              Jubileum blah blah blah
+            </h1>
+            <h3 className="text-center text-lg">1 Juni till 7 Juni</h3>
           </div>
         </div>
       </div>
+      <Schedule />
 
       <button
-        className="block fixed h-16 w-16 right-8 bottom-8 bg-blue-500 text-white rounded-full"
+        className="fixed right-8 bottom-8 block h-16 w-16 rounded-full bg-blue-500 text-white"
         onClick={() => window.scrollTo(0, 0)}
       >
         Top
       </button>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
