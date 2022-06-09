@@ -1,9 +1,13 @@
-interface Event {
+export interface Event {
   id: string;
   name: string;
   description: string;
   startTime: Date;
   endtime: Date;
+  price?: string;
+  location?: string;
+  imageUrl?: string;
+  dressCode?: string;
 }
 
 const events: Event[] = [
