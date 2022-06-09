@@ -6,7 +6,7 @@ import Schedule from "../components/Schedule";
 import Logo from "../public/assets/images/juble40_color.svg";
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <Layout description="D-sektionen firar 40 år 2022 och det ska firas med en vecka fylld av eveneang. Här hittar du all information man kan behöva och mer!">
     <div className="h-[5000px] pt-8">
       <div className="flex justify-center">
         <div className="flex flex-col">
